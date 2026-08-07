@@ -41,7 +41,7 @@ const plans: MembershipPlan[] = [
       "Morning prayer & Scripture guidance",
     ],
     planId: process.env.NEXT_PUBLIC_PAYPAL_MONTHLY_PLAN_ID || "MONTHLY_DEVOTIONAL",
-    paypalUrl: PAYPAL_MONTHLY_URL,
+    paypalUrl: "https://www.paypal.com/ncp/payment/466ML4KA56ZMY",
   },
   {
     id: "yearly",
@@ -58,7 +58,7 @@ const plans: MembershipPlan[] = [
       "Lifetime access to special editions",
     ],
     planId: process.env.NEXT_PUBLIC_PAYPAL_YEARLY_PLAN_ID || "YEARLY_DEVOTIONAL",
-    paypalUrl: PAYPAL_YEARLY_URL,
+    paypalUrl: "https://www.paypal.com/ncp/payment/RTSX44YWXKBBQ",
     popular: true,
   },
 ];

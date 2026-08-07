@@ -40,6 +40,7 @@ export const HARDCODED_EBOOKS: ExtendedEbook[] = [
     price: 1000, // Default suggested amount $10.00
     isPayWhatYouWant: true,
     minPrice: 100, // Minimum $1.00
+    paypalDirectLink: "https://www.paypal.com/ncp/payment/CR58NXM7HRWJC",
     coverUrl: "/images/price_pay_what_you_want.png",
     screenshots: [
       "/images/sc_price_pay_what_you_want.png",
@@ -62,6 +63,7 @@ export const HARDCODED_EBOOKS: ExtendedEbook[] = [
     shortDescription:
       "How to Build a Life-Changing Prayer Life — pray boldly, live powerfully, walk in His will.",
     price: 2497, // $24.97
+    paypalDirectLink: "https://www.paypal.com/ncp/payment/LLMMEBWU7FGGG",
     coverUrl: "/images/price$24.97.png",
     screenshots: [
       "/images/sc_price$24.97.png",

@@ -78,18 +78,17 @@ body {
 
 /* ─── Grace Gold Pill Buttons ─── */
 .btn-gold {
-  background: linear-gradient(135deg, #d4af37 0%, #c5a059 50%, #b38f38 100%);
-  color: #1a1d20;
-  font-weight: 600;
+  background: linear-gradient(135deg, #8a703e 0%, #9e8655 50%, #8a703e 100%);
+  color: #ffffff;
+  font-weight: 700;
   border-radius: 9999px;
-  box-shadow: 0 4px 18px rgba(197, 160, 89, 0.3);
+  box-shadow: 0 4px 18px rgba(138, 112, 62, 0.35);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-gold:hover {
-
-  background: linear-gradient(135deg, #e5c158 0%, #d4af37 50%, #c5a059 100%);
-  box-shadow: 0 6px 25px rgba(197, 160, 89, 0.45);
+  background: linear-gradient(135deg, #9e8655 0%, #8a703e 50%, #765f32 100%);
+  box-shadow: 0 6px 25px rgba(138, 112, 62, 0.5);
   transform: translateY(-1px);
 }
 

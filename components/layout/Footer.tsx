@@ -9,10 +9,11 @@ const footerLinks = {
     { label: "About Us", href: "/about" },
     { label: "Contact Us", href: "/contact" },
   ],
-  support: [
-    { label: "Support Our Mission", href: "/support" },
-    { label: "Sign In / Sign Up", href: "/login" },
-  ],
+  // SUPPORT-MISSION: hidden until re-enabled
+  // support: [
+  //   { label: "Support Our Mission", href: "/support" },
+  //   { label: "Sign In / Sign Up", href: "/login" },
+  // ],
 
   legal: [
     { label: "Privacy Policy", href: "/privacy" },
@@ -101,24 +102,26 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Support Column */}
-          <div>
-            <h3 className="text-xs font-bold uppercase tracking-wider text-[#c5a059] mb-4">
-              Support
-            </h3>
-            <ul className="space-y-2.5">
-              {footerLinks.support.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-[var(--color-text-secondary)] hover:text-[#c5a059] transition-colors duration-200"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* SUPPORT-MISSION: Support Column hidden until re-enabled — guarded by false */}
+          {false && (
+            <div>
+              <h3 className="text-xs font-bold uppercase tracking-wider text-[#c5a059] mb-4">
+                Support
+              </h3>
+              <ul className="space-y-2.5">
+                {([{ label: "Support Our Mission", href: "/support" }, { label: "Sign In / Sign Up", href: "/login" }] as { label: string; href: string }[]).map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="text-sm text-[var(--color-text-secondary)] hover:text-[#c5a059] transition-colors duration-200"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           {/* Legal Column */}
           <div>

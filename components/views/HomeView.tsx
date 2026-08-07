@@ -49,17 +49,18 @@ const HERO_SLIDES = [
     ctaLink: "/ebooks",
     videoId: "jbVD41XvvoU",
   },
-  {
-    id: 3,
-    badge: "Faith Community",
-    title: "Support Our Mission",
-    subtitle: "Support our mission and digital publications to help spread hope & grace across the globe.",
-    image:
-      "https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?auto=format&fit=crop&w=1920&q=90",
-    ctaText: "Support Our Mission",
-    ctaLink: "/support",
-    videoId: "jbVD41XvvoU",
-  },
+  // SUPPORT-MISSION: Hero slide 3 hidden until re-enabled
+  // {
+  //   id: 3,
+  //   badge: "Faith Community",
+  //   title: "Support Our Mission",
+  //   subtitle: "Support our mission and digital publications to help spread hope & grace across the globe.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?auto=format&fit=crop&w=1920&q=90",
+  //   ctaText: "Support Our Mission",
+  //   ctaLink: "/support",
+  //   videoId: "jbVD41XvvoU",
+  // },
 ];
 
 const PRODUCTS = [
@@ -392,53 +393,54 @@ export default function HomeView() {
         </div>
       </section>
 
-      {/* ─── Section 3: Voluntary Support Banner ─── */}
-      <section className="py-16 px-6 max-w-6xl mx-auto">
-        <div className="relative rounded-3xl overflow-hidden p-8 sm:p-12 border border-[#c5a059]/40 bg-gradient-to-r from-[#FAF5E8] via-[#FFFDF8] to-[#F5EFE0] shadow-xl">
-          {/* Subtle Ambient Background Lighting */}
-          <div className="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-[#c5a059]/10 blur-3xl pointer-events-none" />
+      {/* SUPPORT-MISSION: Voluntary Support Banner hidden until re-enabled — guarded by false */}
+      {false && (
+        <section className="py-16 px-6 max-w-6xl mx-auto">
+          <div className="relative rounded-3xl overflow-hidden p-8 sm:p-12 border border-[#c5a059]/40 bg-gradient-to-r from-[#FAF5E8] via-[#FFFDF8] to-[#F5EFE0] shadow-xl">
+            <div className="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-[#c5a059]/10 blur-3xl pointer-events-none" />
 
-          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-            <div className="lg:col-span-2 space-y-4">
-              <Badge variant="gold" className="gap-1.5">
-                <HeartHandshake size={14} className="text-[#c5a059]" />
-                Voluntary Support
-              </Badge>
-              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-[#1a1d20] tracking-tight">
-                Voluntary Support For Digital Publications
-              </h2>
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+              <div className="lg:col-span-2 space-y-4">
+                <Badge variant="gold" className="gap-1.5">
+                  <HeartHandshake size={14} className="text-[#c5a059]" />
+                  Voluntary Support
+                </Badge>
+                <h2 className="font-heading text-3xl sm:text-4xl font-bold text-[#1a1d20] tracking-tight">
+                  Voluntary Support For Digital Publications
+                </h2>
 
-              <p className="text-base text-[var(--color-text-secondary)] leading-relaxed max-w-xl font-normal">
-                Your voluntary support helps us produce free weekly reflections, maintain digital channels, and provide complimentary access to readers in need around the world.
-              </p>
-              <div className="flex flex-wrap gap-4 pt-2 text-xs font-semibold text-[#c5a059]">
-                <div className="flex items-center gap-1.5">
-                  <CheckCircle2 size={16} className="text-[#c5a059]" />
-                  <span>100% Direct Support</span>
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <CheckCircle2 size={16} className="text-[#c5a059]" />
-                  <span>Secure PayPal & Card</span>
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <CheckCircle2 size={16} className="text-[#c5a059]" />
-                  <span>Global Reach</span>
+                <p className="text-base text-[var(--color-text-secondary)] leading-relaxed max-w-xl font-normal">
+                  Your voluntary support helps us produce free weekly reflections, maintain digital channels, and provide complimentary access to readers in need around the world.
+                </p>
+                <div className="flex flex-wrap gap-4 pt-2 text-xs font-semibold text-[#c5a059]">
+                  <div className="flex items-center gap-1.5">
+                    <CheckCircle2 size={16} className="text-[#c5a059]" />
+                    <span>100% Direct Support</span>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <CheckCircle2 size={16} className="text-[#c5a059]" />
+                    <span>Secure PayPal &amp; Card</span>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <CheckCircle2 size={16} className="text-[#c5a059]" />
+                    <span>Global Reach</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="flex flex-col sm:flex-row lg:flex-col gap-4 justify-center">
-              <Button href="/support" variant="gold" size="lg" className="w-full">
-                <HeartHandshake size={18} />
-                Provide Voluntary Support
-              </Button>
-              <Button href="/about" variant="gold-outline" size="lg" className="w-full">
-                Learn About Our Mission
-              </Button>
+              <div className="flex flex-col sm:flex-row lg:flex-col gap-4 justify-center">
+                <Button href="/support" variant="gold" size="lg" className="w-full">
+                  <HeartHandshake size={18} />
+                  Provide Voluntary Support
+                </Button>
+                <Button href="/about" variant="gold-outline" size="lg" className="w-full">
+                  Learn About Our Mission
+                </Button>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
 
       {/* ─── Section 4: What You'll Find Here (3 Main Pillars) ─── */}

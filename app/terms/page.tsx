@@ -10,7 +10,7 @@ const content = `
 <div class="p-5 rounded-2xl bg-[#FAF5E8] border border-[#c5a059]/40 mb-10 space-y-2">
   <p class="text-xs font-bold uppercase tracking-wider text-[#c5a059]">Welcome to Faith Rising Media</p>
   <p class="text-base text-[#1a1d20] leading-relaxed font-medium">
-    By using our website, purchasing our eBooks, or supporting our mission, you agree to these clear and simple terms.
+    By using our website or purchasing our eBooks, you agree to these clear and simple terms.
   </p>
 </div>
 
@@ -34,9 +34,11 @@ const content = `
 <p>All eBook purchases are delivered digitally right after checkout.</p>
 <p>For products offered under "Pay As You Want", you have the freedom to choose your desired purchase amount.</p>
 
+<!-- SUPPORT-MISSION: Section 5 hidden until re-enabled
 <h2>5. Support Our Mission Program</h2>
 <p>Contributions made under our "Support Our Mission" program are voluntary gifts that help fund the creation, publishing, and global sharing of faith-based content.</p>
 <p>Voluntary support gifts are completely optional and are not purchases of company shares or business ownership.</p>
+-->
 
 <h2>6. Responsible Website Use</h2>
 <p>We ask all visitors to use our website respectfully. Please do not attempt to disrupt the site, post harmful material, or misuse our services.</p>

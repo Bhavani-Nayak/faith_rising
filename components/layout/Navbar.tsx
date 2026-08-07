@@ -4,14 +4,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Menu, X, HeartHandshake, LogIn } from "lucide-react";
+import { Menu, X, /* HeartHandshake, */ LogIn } from "lucide-react";
 
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Ebooks", href: "/ebooks" },
   { label: "Membership", href: "/membership" },
   { label: "Blog", href: "/blog" },
-  { label: "Support", href: "/support" },
+  // { label: "Support", href: "/support" }, // SUPPORT-MISSION: hidden until re-enabled
 ];
 
 export default function Navbar() {
@@ -69,6 +69,7 @@ export default function Navbar() {
             <span>Sign In</span>
           </Link>
 
+          {/* SUPPORT-MISSION: CTA button hidden until re-enabled
           <Link
             href="/support"
             id="nav-support-now"
@@ -77,6 +78,7 @@ export default function Navbar() {
             <HeartHandshake size={15} />
             <span>Support Our Mission</span>
           </Link>
+          */}
 
           {/* Mobile menu toggle */}
           <button
@@ -118,6 +120,7 @@ export default function Navbar() {
               <span>Sign In / Sign Up</span>
             </Link>
 
+            {/* SUPPORT-MISSION: Mobile CTA hidden until re-enabled
             <Link
               href="/support"
               onClick={() => setMobileOpen(false)}
@@ -126,6 +129,7 @@ export default function Navbar() {
               <HeartHandshake size={16} />
               Support Our Mission
             </Link>
+            */}
           </div>
         </div>
       )}

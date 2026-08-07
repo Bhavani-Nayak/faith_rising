@@ -242,10 +242,9 @@ export default function EbookDetailView({
 
             {/* Price Display */}
             <div className="font-heading text-3xl font-bold text-emerald-700">
-              {customPriceDisplay ||
-                (ebook.isPayWhatYouWant
-                  ? "Pay As You Want"
-                  : `$${(ebook.price / 100).toFixed(2)}`)}
+              {ebook.isPayWhatYouWant
+                ? "Pay What You Want"
+                : (customPriceDisplay || `$${(ebook.price / 100).toFixed(2)}`)}
             </div>
 
             {/* Description */}

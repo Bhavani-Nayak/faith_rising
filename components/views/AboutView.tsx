@@ -179,7 +179,8 @@ export default function AboutView() {
         </GlassCard>
 
         {/* ─── Support Our Work & Connect ─── */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+          {/* SUPPORT-MISSION: Support Our Work card hidden until re-enabled
           <GlassCard className="p-8 border border-[#c5a059]/30 bg-white shadow-md flex flex-col justify-between space-y-6">
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-xs font-bold text-[#c5a059] uppercase tracking-wider">
@@ -200,6 +201,7 @@ export default function AboutView() {
               Support Our Mission
             </Button>
           </GlassCard>
+          */}
 
           <GlassCard className="p-8 border border-[#c5a059]/30 bg-white shadow-md flex flex-col justify-between space-y-6">
             <div className="space-y-3">

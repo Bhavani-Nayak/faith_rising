@@ -213,13 +213,31 @@ export default function MembershipView({
                   </ul>
                 </div>
 
-                <div className="pt-8">
-                  <PayPalCheckoutButton
-                    productId={plan.id}
-                    productSlug="membership"
-                    amount={plan.amountCents}
-                    successRedirect="/membership/success"
-                  />
+                <div className="pt-8 space-y-3">
+                  {plan.paypalUrl ? (
+                    <a
+                      href={plan.paypalUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 w-full py-4 px-6 rounded-full font-bold text-white text-base shadow-lg transition-all duration-200 hover:opacity-90 hover:shadow-xl active:scale-[0.98]"
+                      style={{ background: "linear-gradient(135deg, #8a703e 0%, #9e8655 50%, #8a703e 100%)" }}
+                    >
+                      <Sparkles size={18} />
+                      <span>
+                        {plan.id === "monthly" ? "Subscribe Now — $7/month" : "Subscribe Now — $60/year"}
+                      </span>
+                    </a>
+                  ) : (
+                    <PayPalCheckoutButton
+                      productId={plan.id}
+                      productSlug="membership"
+                      amount={plan.amountCents}
+                      successRedirect="/membership/success"
+                    />
+                  )}
+                  <p className="text-[11px] text-[var(--color-text-muted)] text-center">
+                    🔒 Instant membership access via PayPal.
+                  </p>
                 </div>
               </GlassCard>
             ))}

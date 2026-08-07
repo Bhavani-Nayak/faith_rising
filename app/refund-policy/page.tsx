@@ -2,8 +2,8 @@ import LegalPageView from "@/components/views/LegalPageView";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Refund & Support Policy",
-  description: "Faith Rising Media Refund & Support Policy for digital purchases and voluntary mission contributions.",
+  title: "Refund Policy",
+  description: "Faith Rising Media Refund Policy for digital purchases.",
 };
 
 const content = `
@@ -26,9 +26,11 @@ const content = `
   <li><strong>Verified Payment Error:</strong> An unauthorized or accidental billing issue confirmed by your payment provider.</li>
 </ul>
 
+<!-- SUPPORT-MISSION: Section 3 hidden until re-enabled
 <h2>3. Support Our Mission Voluntary Contributions</h2>
 <p>Gifts made through our "Support Our Mission" program help fund our writing, publishing, and global sharing of faith-based content. Because these contributions directly support ongoing outreach, they are generally non-refundable.</p>
 <p>If you made a typing mistake with your contribution amount during checkout, please contact us within 48 hours and we will gladly correct or refund it for you.</p>
+-->
 
 <h2>4. Easy 3-Step Refund Request Process</h2>
 <p>If you need assistance with an order, simply follow these steps:</p>
@@ -50,7 +52,7 @@ const content = `
 export default function RefundPolicyPage() {
   return (
     <LegalPageView
-      title="Refund & Support Policy"
+      title="Refund Policy"
       lastUpdated="July 26, 2026"
       content={content}
     />
