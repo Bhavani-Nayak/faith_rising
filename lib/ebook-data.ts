@@ -15,6 +15,7 @@ export const HARDCODED_EBOOKS: ExtendedEbook[] = [
     shortDescription:
       "A 30-Day Journey to Know Christ More Deeply — deeper Bible understanding, stronger faith, and spiritual growth.",
     price: 1997, // $19.97
+    paypalDirectLink: "https://www.paypal.com/ncp/payment/H5DJX4QUMPZZU",
     coverUrl: "/images/price$19.97.png",
     screenshots: [
       "/images/sc_price$19.97.png",

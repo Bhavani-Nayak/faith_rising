@@ -8,6 +8,8 @@ export interface Ebook {
   price: number; // USD cents — e.g. 1997 = $19.97
   isPayWhatYouWant?: boolean;
   minPrice?: number;
+  /** Optional direct PayPal payment link (e.g. https://www.paypal.com/ncp/payment/...) — bypasses API checkout */
+  paypalDirectLink?: string;
   coverUrl: string;
   screenshots?: string[];
 
