@@ -19,8 +19,8 @@ const barlow = Barlow({
 
 export const metadata: Metadata = {
   title: {
-    default: "Grace Path Media — Ebooks, Reflections & Membership",
-    template: "%s | Grace Path Media",
+    default: "Faith Rising Media — Ebooks, Reflections & Membership",
+    template: "%s | Faith Rising Media",
   },
   description:
     "A quiet corner of the internet, built for slow mornings and honest reflection — ebooks, weekly readings, and a membership made for the moments in between.",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "membership",
     "mindfulness",
     "reading",
-    "Grace Path Media",
+    "Faith Rising Media",
   ],
   icons: {
     icon: "/images/gracePathLogo.png",

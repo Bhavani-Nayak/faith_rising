@@ -65,7 +65,7 @@ export async function getAccessToken(): Promise<string> {
 export async function createPayPalOrder(
   amount: number, // USD cents
   currency: string = "USD",
-  description: string = "Grace Path Media Purchase"
+  description: string = "Faith Rising Media Purchase"
 ): Promise<string> {
   try {
     const accessToken = await getAccessToken();
@@ -234,7 +234,7 @@ export async function createPayPalSubscription(
     body: JSON.stringify({
       plan_id: planId,
       application_context: {
-        brand_name: "Grace Path Media",
+        brand_name: "Faith Rising Media",
         locale: "en-US",
         shipping_preference: "NO_SHIPPING",
         user_action: "SUBSCRIBE_NOW",

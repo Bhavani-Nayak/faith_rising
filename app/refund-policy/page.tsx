@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Refund & Support Policy",
-  description: "Grace Path Media Refund & Support Policy for digital purchases and voluntary mission contributions.",
+  description: "Faith Rising Media Refund & Support Policy for digital purchases and voluntary mission contributions.",
 };
 
 const content = `
@@ -14,7 +14,7 @@ const content = `
   </p>
 </div>
 
-<p>When you purchase an eBook on Grace Path Media, you get instant access to download your PDF book right after checkout.</p>
+<p>When you purchase an eBook on Faith Rising Media, you get instant access to download your PDF book right after checkout.</p>
 
 <h2>2. How Refunds Work</h2>
 <p>Because digital eBooks can be downloaded immediately to your device, purchases are generally non-refundable once the file has been delivered.</p>
@@ -34,16 +34,16 @@ const content = `
 <p>If you need assistance with an order, simply follow these steps:</p>
 <ol class="list-decimal pl-6 space-y-2">
   <li>Find your order details (your <strong>Full Name</strong>, <strong>Email Address</strong>, and <strong>Order Receipt Number</strong>).</li>
-  <li>Send an email to <a href="mailto:contact@gracepathmedia.com" class="font-bold underline">contact@gracepathmedia.com</a> explaining what happened.</li>
+  <li>Send an email to <a href="mailto:contact@faithrisingmedia.com" class="font-bold underline">contact@faithrisingmedia.com</a> explaining what happened.</li>
   <li>Our friendly team will reply within <strong>1 to 3 business days</strong> to assist you or process your refund.</li>
 </ol>
 
 <h2>5. Contact Customer Support</h2>
 <p>If you ever have questions about your downloads or order receipts, please reach out to us anytime:</p>
 <p>
-  <strong>Grace Path Media — Customer Support</strong><br />
-  Website: <a href="https://gracepathmedia.com" target="_blank" rel="noopener noreferrer">https://gracepathmedia.com</a><br />
-  Email: <a href="mailto:contact@gracepathmedia.com">contact@gracepathmedia.com</a>
+  <strong>Faith Rising Media — Customer Support</strong><br />
+  Website: <a href="https://faithrisingmedia.com" target="_blank" rel="noopener noreferrer">https://faithrisingmedia.com</a><br />
+  Email: <a href="mailto:contact@faithrisingmedia.com">contact@faithrisingmedia.com</a>
 </p>
 `;
 

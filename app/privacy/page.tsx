@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Grace Path Media Privacy Policy — how we respect and protect your personal information.",
+  description: "Faith Rising Media Privacy Policy — how we respect and protect your personal information.",
 };
 
 const content = `
 <div class="p-5 rounded-2xl bg-[#FAF5E8] border border-[#c5a059]/40 mb-10 space-y-2">
   <p class="text-xs font-bold uppercase tracking-wider text-[#c5a059]">Our Privacy Promise</p>
   <p class="text-base text-[#1a1d20] leading-relaxed font-medium">
-    At Grace Path Media, your trust means everything to us. We only collect the minimal information needed to deliver your digital eBook orders, respond to your messages, and support your experience on our website. We never sell or share your personal data with third-party advertisers.
+    At Faith Rising Media, your trust means everything to us. We only collect the minimal information needed to deliver your digital eBook orders, respond to your messages, and support your experience on our website. We never sell or share your personal data with third-party advertisers.
   </p>
 </div>
 
@@ -51,9 +51,9 @@ const content = `
 <h2>8. Contact Us About Your Privacy</h2>
 <p>If you have any questions about this Privacy Policy or wish to request changes to your personal information, please reach out to us:</p>
 <p>
-  <strong>Grace Path Media — Customer Support</strong><br />
-  Website: <a href="https://gracepathmedia.com" target="_blank" rel="noopener noreferrer">https://gracepathmedia.com</a><br />
-  Email: <a href="mailto:contact@gracepathmedia.com">contact@gracepathmedia.com</a>
+  <strong>Faith Rising Media — Customer Support</strong><br />
+  Website: <a href="https://faithrisingmedia.com" target="_blank" rel="noopener noreferrer">https://faithrisingmedia.com</a><br />
+  Email: <a href="mailto:contact@faithrisingmedia.com">contact@faithrisingmedia.com</a>
 </p>
 `;
 

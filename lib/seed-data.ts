@@ -10,7 +10,7 @@ export const sampleEbooks = [
   {
     slug: "the-quiet-hours",
     title: "The Quiet Hours",
-    author: "Grace Path Media",
+    author: "Faith Rising Media",
     description:
       "A collection of short reflections for early mornings and late nights — the moments when the world is still and your thoughts are loudest. Each piece is designed to be read slowly, without rushing, as a small act of care for yourself.",
     shortDescription:
@@ -27,7 +27,7 @@ export const sampleEbooks = [
   {
     slug: "letters-to-no-one",
     title: "Letters To No One",
-    author: "Grace Path Media",
+    author: "Faith Rising Media",
     description:
       "Thirty-one letters written to no one in particular — and to everyone at the same time. Each letter explores a different feeling, memory, or moment of reckoning. Honest, unpolished, and deeply human.",
     shortDescription:
@@ -56,7 +56,7 @@ export const sampleBlogPosts = [
       <p>Pausing isn't laziness. It's an active decision to let your mind wander, to let ideas simmer, to let your body remember what rest actually feels like.</p>
       <p>The next time you find yourself with an empty hour, resist the urge to fill it. Sit with the discomfort. You might be surprised by what surfaces.</p>
     `,
-    author: "Grace Path Media",
+    author: "Faith Rising Media",
     coverUrl: "/images/blog-placeholder.svg", // TODO: replace
     tags: ["Reflection", "Stillness", "Mindfulness"],
     publishedAt: new Date("2025-01-10"),
@@ -77,7 +77,7 @@ export const sampleBlogPosts = [
       <p>What if your morning ritual was just… waking up? Making something warm to drink. Looking out the window. Letting the day arrive at its own pace.</p>
       <p>Not every morning needs to be a masterclass in discipline. Some mornings just need to be mornings.</p>
     `,
-    author: "Grace Path Media",
+    author: "Faith Rising Media",
     coverUrl: "/images/blog-placeholder.svg",
     tags: ["Morning", "Routine", "Anti-Hustle"],
     publishedAt: new Date("2025-01-17"),

@@ -33,10 +33,10 @@ export async function generateInvoiceForOrder(params: {
   amount: number;
   currency?: string;
 }): Promise<InvoiceRecord> {
-  const { paypalOrderId, uid, customerEmail = "customer@gracepathmedia.com", productId, amount, currency = "USD" } = params;
+  const { paypalOrderId, uid, customerEmail = "customer@faithrisingmedia.com", productId, amount, currency = "USD" } = params;
   const invoiceNumber = `INV-${new Date().getFullYear()}-${Date.now().toString().slice(-6)}`;
   const matchedEbook = HARDCODED_EBOOKS.find((b) => b.id === productId || b.slug === productId);
-  const title = matchedEbook?.title ?? "Grace Path Media Digital eBook";
+  const title = matchedEbook?.title ?? "Faith Rising Media Digital eBook";
 
   return {
     invoiceNumber,
@@ -78,7 +78,7 @@ export async function getInvoice(
       invoiceNumber: `INV-${matchedEbook.id.toUpperCase()}`,
       orderId: `ORDER-${matchedEbook.id.toUpperCase()}`,
       uid: uid || "user",
-      customerEmail: "customer@gracepathmedia.com",
+      customerEmail: "customer@faithrisingmedia.com",
       items: [
         {
           ebookId: matchedEbook.id,

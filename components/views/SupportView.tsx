@@ -123,7 +123,7 @@ export default function SupportView() {
             </h1>
 
             <p className="text-[var(--color-text-secondary)] text-base sm:text-lg font-normal leading-relaxed">
-              Grace Path Media is a faith-based digital platform spreading the Gospel
+              Faith Rising Media is a faith-based digital platform spreading the Gospel
               through digital media. Your voluntary support helps us create Christ-centered
               content, reach more souls, and make an eternal impact worldwide.
             </p>
@@ -380,7 +380,7 @@ export default function SupportView() {
             <div className="space-y-1">
               <h4 className="text-sm font-bold text-[#1a1d20]">Important Notice</h4>
               <p className="text-xs text-[var(--color-text-secondary)] leading-relaxed font-normal">
-                Grace Path Media is a faith-based digital platform. Your support is completely voluntary
+                Faith Rising Media is a faith-based digital platform. Your support is completely voluntary
                 and is used to further our mission of sharing Christ-centered digital resources globally.
               </p>
             </div>
@@ -388,7 +388,7 @@ export default function SupportView() {
 
           <div className="md:col-span-4 text-center md:text-right border-t md:border-t-0 md:border-l border-[#c5a059]/20 pt-4 md:pt-0 md:pl-6">
             <h4 className="font-heading text-lg font-bold text-[#1a1d20]">
-              Grace Path Media <span className="text-[#c5a059]">♡</span>
+              Faith Rising Media <span className="text-[#c5a059]">♡</span>
             </h4>
             <p className="text-xs text-[var(--color-text-muted)] italic font-serif">
               Thank you for being a part of our mission!

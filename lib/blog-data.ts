@@ -7,7 +7,7 @@ export const HARDCODED_BLOG_POSTS: BlogPost[] = [
     title: "The Quiet Morning: Finding Peace Before the Noise Begins",
     excerpt:
       "In a world that demands instant attention, taking fifteen quiet minutes with God each morning anchors your soul in eternal peace.",
-    author: "Grace Path Media Team",
+    author: "Faith Rising Media Team",
     coverUrl:
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
     tags: ["Morning Reflection", "Prayer", "Peace", "Devotional"],
@@ -40,7 +40,7 @@ export const HARDCODED_BLOG_POSTS: BlogPost[] = [
     title: "Walking by Faith in a World of Distractions",
     excerpt:
       "How setting intentional digital boundaries allows us to hear God's still, small voice clearly in our everyday lives.",
-    author: "Grace Path Media Team",
+    author: "Faith Rising Media Team",
     coverUrl:
       "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
     tags: ["Faith", "Christian Living", "Mindfulness"],
@@ -65,7 +65,7 @@ export const HARDCODED_BLOG_POSTS: BlogPost[] = [
     title: "Anchored in Scripture: How Daily Readings Transform Your Heart",
     excerpt:
       "Discovering the transformative power of small, consistent habits of Scripture reading every morning.",
-    author: "Grace Path Media Team",
+    author: "Faith Rising Media Team",
     coverUrl:
       "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80",
 
@@ -89,7 +89,7 @@ export const HARDCODED_BLOG_POSTS: BlogPost[] = [
     title: "The Power of Simple Prayer: Talking with God Without Pretense",
     excerpt:
       "Prayer isn't about eloquent words — it's an honest conversation with a loving Father who cares about every detail of your life.",
-    author: "Grace Path Media Team",
+    author: "Faith Rising Media Team",
     coverUrl:
       "https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1200&q=80",
     tags: ["Prayer", "Fellowship", "Encouragement"],
@@ -111,7 +111,7 @@ export const HARDCODED_BLOG_POSTS: BlogPost[] = [
     title: "Grace for Today: Releasing Yesterday's Burden",
     excerpt:
       "God's mercies are new every morning. Learning to receive today's grace and let go of yesterday's regret.",
-    author: "Grace Path Media Team",
+    author: "Faith Rising Media Team",
     coverUrl:
       "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1200&q=80",
     tags: ["Grace", "Hope", "Renewal"],
@@ -133,7 +133,7 @@ export const HARDCODED_BLOG_POSTS: BlogPost[] = [
     title: "Creating a Sanctuary at Home: Cultivating Quiet Spaces for Reflection",
     excerpt:
       "Simple ways to designate a quiet corner in your home for morning devotionals, journaling, and silent prayer.",
-    author: "Grace Path Media Team",
+    author: "Faith Rising Media Team",
     coverUrl:
       "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=1200&q=80",
     tags: ["Home Sanctuary", "Quiet Time", "Reflection"],

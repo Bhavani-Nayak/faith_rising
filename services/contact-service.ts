@@ -20,8 +20,8 @@ export async function submitContactForm(data: ContactFormData): Promise<void> {
       });
       return;
     }
-    console.log("[Grace Path Media] Contact Submission Received:", data);
+    console.log("[Faith Rising Media] Contact Submission Received:", data);
   } catch (error) {
-    console.warn("[Grace Path Media] Contact Form stored fallback:", error);
+    console.warn("[Faith Rising Media] Contact Form stored fallback:", error);
   }
 }

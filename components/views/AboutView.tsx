@@ -51,11 +51,11 @@ export default function AboutView() {
         <div className="space-y-6">
           <Badge variant="gold" className="gap-1.5">
             <Sparkles size={14} className="text-[#c5a059]" />
-            About Grace Path Media
+            About Faith Rising Media
           </Badge>
           
           <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-[#1a1d20] tracking-tight leading-tight">
-            Welcome to Grace Path Media
+            Welcome to Faith Rising Media
           </h1>
 
           <p className="text-xl font-heading text-[#c5a059] font-bold tracking-wide">
@@ -64,7 +64,7 @@ export default function AboutView() {
 
           <div className="space-y-5 text-[var(--color-text-secondary)] leading-relaxed text-base sm:text-lg font-normal">
             <p>
-              Grace Path Media is a Christian digital publishing and media platform dedicated to creating Scripture-centered resources that encourage faith, strengthen biblical understanding, and inspire people to grow in their relationship with Jesus Christ.
+              Faith Rising Media is a Christian digital publishing and media platform dedicated to creating Scripture-centered resources that encourage faith, strengthen biblical understanding, and inspire people to grow in their relationship with Jesus Christ.
             </p>
             <p>
               Our mission is to communicate timeless biblical truth through high-quality digital content that is accessible to people around the world. Through eBooks, devotionals, Bible-based teaching resources, inspirational articles, and other faith-centered publications, we seek to equip believers with practical encouragement firmly rooted in God&apos;s Word.
@@ -114,7 +114,7 @@ export default function AboutView() {
               What We Create
             </h2>
             <p className="text-sm text-[var(--color-text-secondary)] font-normal">
-              Grace Path Media publishes a growing collection of faith-based digital resources.
+            Faith Rising Media publishes a growing collection of faith-based digital resources.
             </p>
           </div>
 
@@ -190,7 +190,7 @@ export default function AboutView() {
                 Help Us Continue Creating
               </h3>
               <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed font-normal">
-                If Grace Path Media has encouraged or strengthened your faith, your voluntary support enables us to continue creating Scripture-centered digital resources for readers around the world.
+                If Faith Rising Media has encouraged or strengthened your faith, your voluntary support enables us to continue creating Scripture-centered digital resources for readers around the world.
               </p>
               <p className="text-xs text-[var(--color-text-muted)] leading-relaxed">
                 Every purchase and voluntary contribution helps support research, writing, editing, digital publishing, website development, content production, and biblically grounded resources.
@@ -216,12 +216,12 @@ export default function AboutView() {
               <div className="space-y-1 text-xs text-[#1a1d20] pt-2">
                 <p className="flex items-center gap-2 font-medium">
                   <Globe size={14} className="text-[#c5a059]" />
-                  <span>gracepathmedia.com</span>
+                  <span>faithrisingmedia.com</span>
                 </p>
                 <p className="flex items-center gap-2 font-medium">
                   <Mail size={14} className="text-[#c5a059]" />
-                  <a href="mailto:contact@gracepathmedia.com" className="hover:underline text-[#c5a059]">
-                    contact@gracepathmedia.com
+                  <a href="mailto:contact@faithrisingmedia.com" className="hover:underline text-[#c5a059]">
+                    contact@faithrisingmedia.com
                   </a>
                 </p>
               </div>
@@ -238,7 +238,7 @@ export default function AboutView() {
             &ldquo;Our prayer is that every resource we publish encourages your faith, deepens your understanding of God&apos;s Word, and helps you walk each day with hope, wisdom, and confidence in Jesus Christ.&rdquo;
           </p>
           <p className="text-xs font-bold uppercase tracking-widest text-[#c5a059]">
-            Grace Path Media — Inspiring Faith. Impacting Lives.
+            Faith Rising Media — Inspiring Faith. Impacting Lives.
           </p>
         </div>
       </div>

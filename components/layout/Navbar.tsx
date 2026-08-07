@@ -26,14 +26,14 @@ export default function Navbar() {
           <div className="h-10 px-2.5 rounded-xl border border-[#c5a059]/40 bg-white flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform overflow-hidden">
             <Image
               src="/images/gracePathLogo.png"
-              alt="Grace Path Logo"
+              alt="Faith Rising Logo"
               width={34}
               height={34}
               className="object-contain"
             />
           </div>
           <span className="font-heading font-bold text-lg sm:text-xl text-[#1a1d20] tracking-wide group-hover:text-[#c5a059] transition-colors">
-            Grace Path <span className="text-[#c5a059] text-xs font-sans uppercase font-bold tracking-wider ml-1 hidden lg:inline-block">Media</span>
+            Faith Rising <span className="text-[#c5a059] text-xs font-sans uppercase font-bold tracking-wider ml-1 hidden lg:inline-block">Media</span>
           </span>
         </Link>
 

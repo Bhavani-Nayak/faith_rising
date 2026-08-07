@@ -28,7 +28,7 @@ function SuccessContent() {
           </Badge>
 
           <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a1d20] tracking-tight leading-tight">
-            Welcome to Grace Path 🙏
+            Welcome to Faith Rising 🙏
           </h1>
 
           <p className="text-[var(--color-text-secondary)] text-lg leading-relaxed max-w-lg mx-auto">
@@ -103,7 +103,7 @@ function SuccessContent() {
         </div>
 
         <p className="text-center text-xs text-[var(--color-text-muted)] font-medium">
-          Grace Path Media — Daily Walk With God. Your membership is managed securely via PayPal.
+          Faith Rising Media — Daily Walk With God. Your membership is managed securely via PayPal.
         </p>
       </div>
 

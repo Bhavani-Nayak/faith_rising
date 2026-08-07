@@ -51,14 +51,14 @@ export default function Footer() {
               <div className="h-10 px-2.5 rounded-xl border border-[#c5a059]/40 bg-white flex items-center justify-center shadow-sm overflow-hidden">
                 <Image
                   src="/images/gracePathLogo.png"
-                  alt="Grace Path Logo"
+                  alt="Faith Rising Logo"
                   width={34}
                   height={34}
                   className="object-contain"
                 />
               </div>
               <span className="font-heading font-bold text-xl text-[#1a1d20] tracking-wide group-hover:text-[#c5a059] transition-colors">
-                Grace Path <span className="text-[#c5a059] font-sans text-xs uppercase tracking-widest ml-1 font-bold">Media</span>
+                Faith Rising <span className="text-[#c5a059] font-sans text-xs uppercase tracking-widest ml-1 font-bold">Media</span>
               </span>
             </Link>
 
@@ -143,7 +143,7 @@ export default function Footer() {
         {/* Bottom copyright notice */}
         <div className="mt-12 pt-8 border-t border-black/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <p className="text-xs text-[var(--color-text-muted)]">
-            © {new Date().getFullYear()} Grace Path Media. Built for quiet mornings and faith. All rights reserved.
+            © {new Date().getFullYear()} Faith Rising Media. Built for quiet mornings and faith. All rights reserved.
           </p>
           <p className="text-xs text-[var(--color-text-muted)]">
             Inspired by faith & community.

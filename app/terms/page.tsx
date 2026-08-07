@@ -3,26 +3,26 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "Grace Path Media Terms of Service governing the use of our website and digital resources.",
+  description: "Faith Rising Media Terms of Service governing the use of our website and digital resources.",
 };
 
 const content = `
 <div class="p-5 rounded-2xl bg-[#FAF5E8] border border-[#c5a059]/40 mb-10 space-y-2">
-  <p class="text-xs font-bold uppercase tracking-wider text-[#c5a059]">Welcome to Grace Path Media</p>
+  <p class="text-xs font-bold uppercase tracking-wider text-[#c5a059]">Welcome to Faith Rising Media</p>
   <p class="text-base text-[#1a1d20] leading-relaxed font-medium">
     By using our website, purchasing our eBooks, or supporting our mission, you agree to these clear and simple terms.
   </p>
 </div>
 
 <h2>1. Welcome and Agreement</h2>
-<p>These Terms of Service outline the guidelines for using the Grace Path Media website (gracepathmedia.com) and accessing our digital books, devotionals, and resources.</p>
+<p>These Terms of Service outline the guidelines for using the Faith Rising Media website (faithrisingmedia.com) and accessing our digital books, devotionals, and resources.</p>
 <p>By using our website or downloading our resources, you agree to follow these guidelines.</p>
 
 <h2>2. Our Digital Books & Content</h2>
-<p>Grace Path Media creates and publishes faith-centered eBooks, devotionals, study materials, and articles designed for quiet reading, reflection, and spiritual encouragement.</p>
+<p>Faith Rising Media creates and publishes faith-centered eBooks, devotionals, study materials, and articles designed for quiet reading, reflection, and spiritual encouragement.</p>
 
 <h2>3. Single-User License for eBook Downloads</h2>
-<p>When you purchase an eBook from Grace Path Media, you receive a personal license to download and read the file on your personal devices (such as your phone, tablet, or computer).</p>
+<p>When you purchase an eBook from Faith Rising Media, you receive a personal license to download and read the file on your personal devices (such as your phone, tablet, or computer).</p>
 
 <div class="p-4 rounded-xl bg-white border border-[#c5a059]/40 my-6 shadow-sm">
   <p class="text-xs font-bold text-[#1a1d20] uppercase tracking-wider">Personal Use Guidelines</p>
@@ -50,9 +50,9 @@ const content = `
 <h2>9. Contact Us</h2>
 <p>If you have any questions regarding these Terms of Service, please feel free to reach out:</p>
 <p>
-  <strong>Grace Path Media — Customer Support</strong><br />
-  Website: <a href="https://gracepathmedia.com" target="_blank" rel="noopener noreferrer">https://gracepathmedia.com</a><br />
-  Email: <a href="mailto:contact@gracepathmedia.com">contact@gracepathmedia.com</a>
+  <strong>Faith Rising Media — Customer Support</strong><br />
+  Website: <a href="https://faithrisingmedia.com" target="_blank" rel="noopener noreferrer">https://faithrisingmedia.com</a><br />
+  Email: <a href="mailto:contact@faithrisingmedia.com">contact@faithrisingmedia.com</a>
 </p>
 `;
 

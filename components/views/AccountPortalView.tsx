@@ -286,7 +286,7 @@ export default function AccountPortalView({
                     Free Member Account
                   </h3>
                   <p className="text-xs text-[var(--color-text-secondary)] leading-relaxed max-w-xl">
-                    You currently hold a standard Grace Path account. Subscribe to the &quot;Daily Walk With God&quot; program to receive morning email readings and full audio archive access.
+                    You currently hold a standard Faith Rising account. Subscribe to the &quot;Daily Walk With God&quot; program to receive morning email readings and full audio archive access.
                   </p>
                 </div>
 
@@ -371,7 +371,7 @@ export default function AccountPortalView({
                 <div className="space-y-1">
                   <h4 className="text-sm font-bold text-red-700">Danger Zone</h4>
                   <p className="text-xs text-[var(--color-text-secondary)] font-normal">
-                    Permanently delete your Grace Path account and remove all saved preferences.
+                    Permanently delete your Faith Rising account and remove all saved preferences.
                   </p>
                 </div>
 

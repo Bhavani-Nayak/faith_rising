@@ -36,7 +36,7 @@ export default function LoginView() {
     <PageWrapper>
       <div className="max-w-md mx-auto px-6 py-20">
         <div className="text-center mb-8 space-y-3">
-          <Badge variant="gold">Welcome to Grace Path</Badge>
+          <Badge variant="gold">Welcome to Faith Rising</Badge>
           <h1 className="font-heading text-3xl sm:text-4xl font-bold text-[#1a1d20] tracking-tight">
             {mode === "signin" ? "Sign In to Your Account" : "Create Your Account"}
           </h1>
@@ -89,7 +89,7 @@ export default function LoginView() {
                 {mode === "signin" ? "Signed In Successfully!" : "Account Created!"}
               </h3>
               <p className="text-xs text-[var(--color-text-secondary)] leading-relaxed">
-                Welcome back to Grace Path Media. You can now explore all eBooks and content.
+                Welcome back to Faith Rising Media. You can now explore all eBooks and content.
               </p>
               <Button href="/ebooks" variant="gold" className="w-full">
                 Browse eBooks Catalog
@@ -208,7 +208,7 @@ export default function LoginView() {
           )}
 
           <p className="text-center text-[11px] text-[var(--color-text-muted)] leading-relaxed font-normal pt-2 border-t border-black/5">
-            By continuing, you agree to Grace Path Media&apos;s{" "}
+            By continuing, you agree to Faith Rising Media&apos;s{" "}
             <a href="/terms" className="underline hover:text-[#1a1d20]">
               Terms of Service
             </a>{" "}

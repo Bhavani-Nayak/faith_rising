@@ -11,7 +11,7 @@ export async function getOrderByPaypalId(
     paypalOrderId,
     productId: "whispers-of-grace",
     productType: "ebook",
-    email: "customer@gracepathmedia.com",
+    email: "customer@faithrisingmedia.com",
     uid: "guest",
     amount: 1997,
     currency: "USD",

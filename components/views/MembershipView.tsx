@@ -229,7 +229,7 @@ export default function MembershipView({
         {/* Footer encouragement */}
         <div className="text-center pt-8 text-xs font-medium text-[var(--color-text-muted)]">
           <p>
-            Grace Path Media — Daily Walk With God Program. All subscriptions are processed securely via PayPal.
+            Faith Rising Media — Daily Walk With God Program. All subscriptions are processed securely via PayPal.
           </p>
         </div>
       </div>

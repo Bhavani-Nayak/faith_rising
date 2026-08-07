@@ -95,7 +95,7 @@ export default function ContactView({
                     Thank You!
                   </h3>
                   <p className="text-[var(--color-text-secondary)] font-medium max-w-md mx-auto text-base leading-relaxed">
-                    Thank you for reaching out to Grace Path Media! We have received your message regarding <span className="font-bold text-[#c5a059]">&quot;{formData.slug || "general-enquiry"}&quot;</span> and our team will connect with you shortly.
+                    Thank you for reaching out to Faith Rising Media! We have received your message regarding <span className="font-bold text-[#c5a059]">&quot;{formData.slug || "general-enquiry"}&quot;</span> and our team will connect with you shortly.
                   </p>
                 </div>
               ) : (
@@ -216,19 +216,19 @@ export default function ContactView({
               {
                 icon: Mail,
                 label: "Email",
-                value: "contact@gracepathmedia.com",
-                link: "mailto:contact@gracepathmedia.com",
+                value: "contact@faithrisingmedia.com",
+                link: "mailto:contact@faithrisingmedia.com",
               },
               {
                 icon: Globe,
                 label: "Website",
-                value: "https://gracepathmedia.com",
-                link: "https://gracepathmedia.com",
+                value: "https://faithrisingmedia.com",
+                link: "https://faithrisingmedia.com",
               },
               {
                 icon: Building2,
                 label: "Business Name",
-                value: "Grace Path Media",
+                value: "Faith Rising Media",
               },
               {
                 icon: MapPin,
@@ -310,16 +310,16 @@ export default function ContactView({
             Continue exploring our collection of Scripture-centered eBooks, devotionals, and biblical resources by visiting:
           </p>
           <div className="flex items-center justify-center gap-4 text-xs font-medium text-[#c5a059]">
-            <a href="https://gracepathmedia.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
-              https://gracepathmedia.com
+            <a href="https://faithrisingmedia.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              https://faithrisingmedia.com
             </a>
             <span>•</span>
-            <a href="mailto:contact@gracepathmedia.com" className="hover:underline">
-              contact@gracepathmedia.com
+            <a href="mailto:contact@faithrisingmedia.com" className="hover:underline">
+              contact@faithrisingmedia.com
             </a>
           </div>
           <p className="text-xs font-bold uppercase tracking-widest text-[#c5a059] pt-2">
-            Grace Path Media — Inspiring Faith. Impacting Lives.
+            Faith Rising Media — Inspiring Faith. Impacting Lives.
           </p>
         </div>
       </div>

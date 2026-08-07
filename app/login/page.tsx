@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Sign In / Sign Up",
-  description: "Sign in or create your Grace Path Media account.",
+  description: "Sign in or create your Faith Rising Media account.",
 };
 
 export default function LoginPage() {

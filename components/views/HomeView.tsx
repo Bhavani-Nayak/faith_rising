@@ -65,12 +65,12 @@ const HERO_SLIDES = [
 const PRODUCTS = [
   {
     type: "Ebook",
-    title: '"Letters of Grace" Ebook',
+    title: '"Praying with Power" Ebook',
     price: "$24.97",
     tags: ["Best Seller", "Instant PDF Download"],
     description:
-      "Thirty-one heartfelt, scripture-filled letters offering hope, encouragement, and honest reflection for every season of walking with God.",
-    image: "/images/Letters_of_Grace_Final.png",
+      "How to Build a Life-Changing Prayer Life. Pray boldly, live powerfully, and walk in His will through deeper connection, stronger faith, and divine guidance.",
+    image: "/images/price$24.97.png",
     link: "/ebooks/letters-of-grace",
   },
   {
@@ -85,12 +85,12 @@ const PRODUCTS = [
   },
   {
     type: "Ebook",
-    title: '"The Power of the Seed" Ebook',
+    title: '"The Hidden Harvest" Ebook',
     price: "Pay What You Want",
     tags: ["Faith Seed", "Digital Media"],
     description:
-      "Discover the profound biblical principles of spiritual planting, faith, and patience. Download instantly on any device.",
-    image: "/images/The_Power_of_the_Seed.png",
+      "Discovering God's Work Beyond What You Can See. God is always working — even in the unseen, the silent, and the waiting seasons.",
+    image: "/images/price_pay_what_you_want.png",
     link: "/ebooks/the-power-of-the-seed",
   },
 ];
@@ -308,7 +308,7 @@ export default function HomeView() {
                 <iframe
                   className="absolute inset-0 w-full h-full"
                   src={`https://www.youtube.com/embed/${activeVideoId}?autoplay=1`}
-                  title="Grace Path Media Video"
+                  title="Faith Rising Media Video"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />

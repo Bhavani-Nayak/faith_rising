@@ -7,7 +7,7 @@
     "build:next": "next build --webpack",
     "postinstall": "node scripts/patch-next.js",
     "cf-build": "node scripts/patch-next.js && opennextjs-cloudflare build",
-    "dev": "next dev",
+    "dev": "next dev --webpack",
     "start": "next start",
     "lint": "eslint",
     "preview": "node scripts/patch-next.js && opennextjs-cloudflare build && opennextjs-cloudflare preview",

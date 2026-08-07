@@ -35,7 +35,7 @@ export async function POST(request: Request) {
     const reqId = `create-order-${Date.now()}`;
 
     let price = 999;
-    let title = "Grace Path Media eBook";
+    let title = "Faith Rising Media eBook";
     let isPayWhatYouWant = false;
     let minPrice = 0;
 
@@ -93,7 +93,7 @@ export async function POST(request: Request) {
         paypalOrderId = await createPayPalOrder(
           price,
           "USD",
-          `Grace Path Media — ${title}`
+          `Faith Rising Media — ${title}`
         );
       }
     } catch (err) {
