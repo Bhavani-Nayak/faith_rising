@@ -3,18 +3,12 @@ import Image from "next/image";
 
 const footerLinks = {
   explore: [
-    { label: "Ebooks & Media", href: "/ebooks" },
-    { label: "Daily Walk Program", href: "/membership" },
-    { label: "Faith Blog", href: "/blog" },
+    { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
+    { label: "YouTube Channels", href: "/#channels" },
+    { label: "Support the Content", href: "/#support" },
     { label: "Contact Us", href: "/contact" },
   ],
-  // SUPPORT-MISSION: hidden until re-enabled
-  // support: [
-  //   { label: "Support Our Mission", href: "/support" },
-  //   { label: "Sign In / Sign Up", href: "/login" },
-  // ],
-
   legal: [
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms of Service", href: "/terms" },
@@ -23,18 +17,22 @@ const footerLinks = {
   ],
 };
 
-const socialLinks = [
+const youtubeChannels = [
   {
-    label: "Facebook",
-    href: process.env.NEXT_PUBLIC_SOCIAL_FACEBOOK_URL ?? "#",
+    name: "God's Daily Message",
+    href: "https://youtube.com/@godsdailymessageofficial?si=Ev36GQG9HoYM7UZf",
   },
   {
-    label: "Instagram",
-    href: process.env.NEXT_PUBLIC_SOCIAL_INSTAGRAM_URL ?? "#",
+    name: "God's Daily Voice",
+    href: "https://youtube.com/@godsdailyvoice-mp4?si=iATQfcR0L-6u3S8q",
   },
   {
-    label: "YouTube",
-    href: process.env.NEXT_PUBLIC_SOCIAL_YOUTUBE_URL ?? "#",
+    name: "God's Affirmation",
+    href: "https://youtube.com/@godsaffirmation01?si=aXGPtfTJJAEW5-gf",
+  },
+  {
+    name: "God Affirmations",
+    href: "https://youtube.com/@godaffirmations01?si=DifcJU-a8iWf_He5",
   },
 ];
 
@@ -63,24 +61,13 @@ export default function Footer() {
               </span>
             </Link>
 
-            <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed max-w-sm font-light">
-              Spreading faith, honest reflection, and peaceful wisdom through digital media to every corner of the world.
+            <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed max-w-sm font-normal">
+              Faith Rising Media provides digital content creation services through YouTube, producing and publishing original inspirational video content for a global audience.
             </p>
 
-            <div className="pt-2 flex items-center gap-3">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3.5 py-1.5 rounded-full text-xs font-medium text-[var(--color-text-secondary)] border border-[#c5a059]/30 bg-white/60 hover:border-[#c5a059] hover:text-[#1a1d20] hover:bg-[#c5a059]/15 transition-all duration-300 shadow-sm"
-                  id={`footer-social-${social.label.toLowerCase()}`}
-                >
-                  {social.label}
-                </a>
-              ))}
-            </div>
+            <p className="text-xs text-[#c5a059] font-semibold border-l-2 border-[#c5a059] pl-3 py-1 bg-[#FAF5E8] rounded-r-md">
+              All payments received are for digital content creation services. There are no physical products involved.
+            </p>
           </div>
 
           {/* Explore Column */}
@@ -102,31 +89,31 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* SUPPORT-MISSION: Support Column hidden until re-enabled — guarded by false */}
-          {false && (
-            <div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#c5a059] mb-4">
-                Support
-              </h3>
-              <ul className="space-y-2.5">
-                {([{ label: "Support Our Mission", href: "/support" }, { label: "Sign In / Sign Up", href: "/login" }] as { label: string; href: string }[]).map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="text-sm text-[var(--color-text-secondary)] hover:text-[#c5a059] transition-colors duration-200"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
+          {/* YouTube Channels Column */}
+          <div>
+            <h3 className="text-xs font-bold uppercase tracking-wider text-[#c5a059] mb-4">
+              YouTube Channels
+            </h3>
+            <ul className="space-y-2.5">
+              {youtubeChannels.map((channel) => (
+                <li key={channel.name}>
+                  <a
+                    href={channel.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-[var(--color-text-secondary)] hover:text-[#c5a059] transition-colors duration-200"
+                  >
+                    {channel.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
 
           {/* Legal Column */}
           <div>
             <h3 className="text-xs font-bold uppercase tracking-wider text-[#c5a059] mb-4">
-              Legal & Disclaimers
+              Legal & Policies
             </h3>
             <ul className="space-y-2.5">
               {footerLinks.legal.map((link) => (
@@ -146,10 +133,10 @@ export default function Footer() {
         {/* Bottom copyright notice */}
         <div className="mt-12 pt-8 border-t border-black/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <p className="text-xs text-[var(--color-text-muted)]">
-            © {new Date().getFullYear()} Faith Rising Media. Built for quiet mornings and faith. All rights reserved.
+            © {new Date().getFullYear()} Faith Rising Media. All rights reserved.
           </p>
           <p className="text-xs text-[var(--color-text-muted)]">
-            Inspired by faith & community.
+            Digital Content Creation Services
           </p>
         </div>
       </div>

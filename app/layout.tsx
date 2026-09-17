@@ -19,18 +19,18 @@ const barlow = Barlow({
 
 export const metadata: Metadata = {
   title: {
-    default: "Faith Rising Media — Ebooks, Reflections & Membership",
+    default: "Faith Rising Media — Digital Content Creation Services",
     template: "%s | Faith Rising Media",
   },
   description:
-    "A quiet corner of the internet, built for slow mornings and honest reflection — ebooks, weekly readings, and a membership made for the moments in between.",
+    "Faith Rising Media provides digital content creation services through YouTube, producing and publishing original inspirational video content for a global audience.",
   keywords: [
-    "ebooks",
-    "reflections",
-    "membership",
-    "mindfulness",
-    "reading",
+    "digital content creation services",
+    "YouTube",
+    "video content",
+    "inspirational videos",
     "Faith Rising Media",
+    "faith affirmations",
   ],
   icons: {
     icon: "/images/gracePathLogo.png",

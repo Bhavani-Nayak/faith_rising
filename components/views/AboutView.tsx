@@ -5,248 +5,175 @@ import GlassCard from "@/components/ui/GlassCard";
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
 import {
-  BookOpen,
-  Target,
-  Layers,
-  ShieldCheck,
-  Eye,
-  HeartHandshake,
-  Mail,
-  Globe,
+  Video,
   CheckCircle2,
   Sparkles,
+  ShieldCheck,
+  Tv,
+  ExternalLink,
+  Globe2,
+  Mail,
+  Heart,
 } from "lucide-react";
 
-const MISSION_POINTS = [
-  "Publish Scripture-centered digital resources that encourage faith and spiritual growth.",
-  "Create biblical content that helps readers understand and apply God's Word.",
-  "Inspire believers to grow in prayer, wisdom, and their daily walk with Jesus Christ.",
-  "Make trustworthy Christian teaching accessible through modern digital platforms.",
-  "Reach people around the world with hope, encouragement, and biblical truth.",
+const CORE_SERVICES = [
+  "Creating original video content",
+  "Publishing regular inspirational messages on YouTube",
+  "Providing faith-based digital media for viewers worldwide",
 ];
 
-const WHAT_WE_CREATE = [
-  { title: "Christian eBooks", desc: "Short, honest, and biblically rooted reads." },
-  { title: "Bible Study & Devotionals", desc: "Daily reflections crafted for quiet mornings." },
-  { title: "Teaching Materials", desc: "Scripture-based study guides and educational content." },
-  { title: "Inspirational Articles", desc: "Weekly blog posts and practical encouragement." },
-  { title: "Faith Educational Content", desc: "Deepening biblical understanding and daily application." },
-  { title: "Digital Publications", desc: "Accessible publishing designed to strengthen believers." },
-];
-
-const CORE_VALUES = [
-  "Faithfulness to Scripture",
-  "Integrity and honesty",
-  "Excellence in digital publishing",
-  "Compassion and encouragement",
-  "Biblical truth with clarity",
-  "Serving others with humility and grace",
+const YOUTUBE_CHANNELS = [
+  {
+    name: "God's Daily Message",
+    handle: "@godsdailymessageofficial",
+    url: "https://youtube.com/@godsdailymessageofficial?si=Ev36GQG9HoYM7UZf",
+  },
+  {
+    name: "God's Daily Voice",
+    handle: "@godsdailyvoice-mp4",
+    url: "https://youtube.com/@godsdailyvoice-mp4?si=iATQfcR0L-6u3S8q",
+  },
+  {
+    name: "God's Affirmation",
+    handle: "@godsaffirmation01",
+    url: "https://youtube.com/@godsaffirmation01?si=aXGPtfTJJAEW5-gf",
+  },
+  {
+    name: "God Affirmations",
+    handle: "@godaffirmations01",
+    url: "https://youtube.com/@godaffirmations01?si=DifcJU-a8iWf_He5",
+  },
 ];
 
 export default function AboutView() {
   return (
     <PageWrapper>
-      <div className="max-w-5xl mx-auto px-6 py-20 space-y-16">
-        {/* ─── Hero / Introduction ─── */}
-        <div className="space-y-6">
+      <div className="max-w-4xl mx-auto px-6 py-20 space-y-12">
+        {/* Header */}
+        <div className="space-y-4">
           <Badge variant="gold" className="gap-1.5">
             <Sparkles size={14} className="text-[#c5a059]" />
             About Faith Rising Media
           </Badge>
-          
-          <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-[#1a1d20] tracking-tight leading-tight">
-            Welcome to Faith Rising Media
+
+          <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-[#1a1d20] tracking-tight">
+            About Us
           </h1>
 
-          <p className="text-xl font-heading text-[#c5a059] font-bold tracking-wide">
-            Inspiring Faith. Impacting Lives.
+          <p className="text-lg sm:text-xl font-heading text-[#c5a059] font-bold tracking-wide">
+            Digital Content Creation Services
           </p>
-
-          <div className="space-y-5 text-[var(--color-text-secondary)] leading-relaxed text-base sm:text-lg font-normal">
-            <p>
-              Faith Rising Media is a Christian digital publishing and media platform dedicated to creating Scripture-centered resources that encourage faith, strengthen biblical understanding, and inspire people to grow in their relationship with Jesus Christ.
-            </p>
-            <p>
-              Our mission is to communicate timeless biblical truth through high-quality digital content that is accessible to people around the world. Through eBooks, devotionals, Bible-based teaching resources, inspirational articles, and other faith-centered publications, we seek to equip believers with practical encouragement firmly rooted in God&apos;s Word.
-            </p>
-            <p>
-              We believe digital technology provides an extraordinary opportunity to share the message of Christ beyond geographical boundaries. By combining biblical teaching with professional digital publishing, we strive to create resources that encourage spiritual growth, deepen faith, and help people apply Scripture to everyday life.
-            </p>
-          </div>
         </div>
 
-        {/* ─── Our Mission ─── */}
-        <GlassCard className="p-8 sm:p-10 border border-[#c5a059]/30 bg-white shadow-lg space-y-6">
-          <div className="flex items-center gap-3">
-            <div className="h-12 w-12 rounded-2xl bg-[#c5a059]/15 border border-[#c5a059]/35 flex items-center justify-center shrink-0">
-              <Target size={24} className="text-[#c5a059]" />
-            </div>
-            <div>
-              <h2 className="font-heading text-2xl sm:text-3xl font-bold text-[#1a1d20]">
-                Our Mission
-              </h2>
-              <p className="text-xs text-[var(--color-text-muted)]">
-                Guided by Scripture & Purpose
-              </p>
-            </div>
+        {/* Main Content Card */}
+        <GlassCard className="p-8 sm:p-12 border border-[#c5a059]/35 bg-white shadow-xl rounded-3xl space-y-8">
+          <div className="space-y-5 text-base sm:text-lg text-[var(--color-text-secondary)] leading-relaxed font-normal">
+            <p>
+              Faith Rising Media is a digital content creation service focused on producing original inspirational and faith-based video content.
+            </p>
+            <p>
+              I create and publish high-quality video content on multiple YouTube channels, delivering messages of hope, encouragement, spiritual growth, and positive affirmations to a global audience. The content is designed to provide value through consistent digital media that people can access anytime.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-            {MISSION_POINTS.map((point) => (
-              <div key={point} className="flex items-start gap-3 p-3 rounded-xl bg-[#fafaf7] border border-black/5">
-                <CheckCircle2 size={18} className="text-[#c5a059] mt-0.5 shrink-0" />
-                <span className="text-sm text-[var(--color-text-secondary)] font-normal">
-                  {point}
-                </span>
-              </div>
-            ))}
-          </div>
-        </GlassCard>
-
-        {/* ─── What We Create ─── */}
-        <div className="space-y-8">
-          <div className="space-y-2">
-            <div className="flex items-center gap-2 text-xs font-bold text-[#c5a059] uppercase tracking-wider">
-              <Layers size={16} />
-              <span>Digital Publications</span>
-            </div>
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-[#1a1d20]">
-              What We Create
+          {/* Core Services Section */}
+          <div className="p-6 sm:p-8 rounded-2xl bg-[#FAF5E8] border border-[#c5a059]/40 space-y-4">
+            <h2 className="font-heading text-xl sm:text-2xl font-bold text-[#1a1d20] flex items-center gap-2">
+              <Video size={22} className="text-[#c5a059]" />
+              <span>Core Services</span>
             </h2>
             <p className="text-sm text-[var(--color-text-secondary)] font-normal">
-            Faith Rising Media publishes a growing collection of faith-based digital resources.
+              As a digital content creator, my core service includes:
+            </p>
+            <div className="space-y-3 pt-1">
+              {CORE_SERVICES.map((service) => (
+                <div key={service} className="flex items-start gap-3">
+                  <CheckCircle2 size={20} className="text-[#c5a059] shrink-0 mt-0.5" />
+                  <span className="text-sm sm:text-base font-semibold text-[#1a1d20]">
+                    {service}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Service Payments & Digital Disclaimer */}
+          <div className="space-y-5 text-base sm:text-lg text-[var(--color-text-secondary)] leading-relaxed font-normal">
+            <p>
+              All payments received through this platform are strictly for digital content creation services. Viewers who find value in the content may choose to support the ongoing creation and publishing of these digital videos.
+            </p>
+            <p>
+              There are no physical products, no merchandise, and no shipping involved. This is purely a digital service delivered through online platforms, primarily YouTube.
+            </p>
+            <p>
+              Faith Rising Media operates with complete transparency and is committed to delivering consistent digital content that uplifts and encourages people across the world.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {WHAT_WE_CREATE.map((item) => (
-              <GlassCard key={item.title} className="p-6 border border-[#c5a059]/30 bg-white shadow-md hover-gold-glow">
-                <div className="h-10 w-10 rounded-xl bg-[#c5a059]/15 border border-[#c5a059]/30 flex items-center justify-center mb-4">
-                  <BookOpen size={20} className="text-[#c5a059]" />
-                </div>
-                <h3 className="font-heading text-lg font-bold text-[#1a1d20] mb-1">
-                  {item.title}
-                </h3>
-                <p className="text-xs text-[var(--color-text-secondary)] font-normal">
-                  {item.desc}
-                </p>
-              </GlassCard>
-            ))}
-          </div>
-        </div>
-
-        {/* ─── Our Core Values ─── */}
-        <div className="space-y-6">
-          <div className="flex items-center gap-2 text-xs font-bold text-[#c5a059] uppercase tracking-wider">
-            <ShieldCheck size={16} />
-            <span>Guiding Principles</span>
-          </div>
-          <h2 className="font-heading text-3xl sm:text-4xl font-bold text-[#1a1d20]">
-            Our Core Values
-          </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {CORE_VALUES.map((val) => (
-              <div
-                key={val}
-                className="p-4 rounded-2xl bg-white border border-[#c5a059]/30 shadow-sm flex items-center gap-3"
-              >
-                <div className="h-2 w-2 rounded-full bg-[#c5a059]" />
-                <span className="text-sm font-semibold text-[#1a1d20]">
-                  {val}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* ─── Our Vision Banner ─── */}
-        <GlassCard className="p-8 sm:p-12 border border-[#c5a059]/40 bg-gradient-to-r from-[#FAF5E8] via-[#FFFDF8] to-[#F5EFE0] shadow-xl space-y-4">
-          <div className="flex items-center gap-3">
-            <div className="h-12 w-12 rounded-2xl bg-[#c5a059]/20 border border-[#c5a059]/40 flex items-center justify-center shrink-0">
-              <Eye size={24} className="text-[#c5a059]" />
+          {/* Mandatory PayPal Compliance Box */}
+          <div className="p-6 rounded-2xl bg-white border-2 border-[#c5a059] shadow-md space-y-2">
+            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#c5a059]">
+              <ShieldCheck size={16} />
+              <span>Official Service Statement</span>
             </div>
-            <h2 className="font-heading text-2xl sm:text-3xl font-bold text-[#1a1d20]">
-              Our Vision
-            </h2>
+            <p className="text-base sm:text-lg font-bold text-[#1a1d20] leading-snug">
+              All payments received are for digital content creation services. There are no physical products involved.
+            </p>
           </div>
-          <p className="text-base text-[var(--color-text-secondary)] leading-relaxed font-normal">
-            We envision a world where trustworthy Christian digital resources are available to anyone seeking biblical wisdom, spiritual encouragement, and a deeper understanding of God&apos;s Word.
-          </p>
-          <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed font-normal">
-            As technology continues to connect people across cultures and nations, we remain committed to publishing resources that inspire faith, strengthen believers, and help people confidently live according to biblical principles.
-          </p>
         </GlassCard>
 
-        {/* ─── Support Our Work & Connect ─── */}
-        <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
-          {/* SUPPORT-MISSION: Support Our Work card hidden until re-enabled
-          <GlassCard className="p-8 border border-[#c5a059]/30 bg-white shadow-md flex flex-col justify-between space-y-6">
-            <div className="space-y-3">
-              <div className="flex items-center gap-2 text-xs font-bold text-[#c5a059] uppercase tracking-wider">
-                <HeartHandshake size={16} />
-                <span>Support Our Work</span>
-              </div>
-              <h3 className="font-heading text-2xl font-bold text-[#1a1d20]">
-                Help Us Continue Creating
-              </h3>
-              <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed font-normal">
-                If Faith Rising Media has encouraged or strengthened your faith, your voluntary support enables us to continue creating Scripture-centered digital resources for readers around the world.
-              </p>
-              <p className="text-xs text-[var(--color-text-muted)] leading-relaxed">
-                Every purchase and voluntary contribution helps support research, writing, editing, digital publishing, website development, content production, and biblically grounded resources.
-              </p>
-            </div>
-            <Button href="/support" variant="gold" size="md" className="w-full">
-              Support Our Mission
-            </Button>
-          </GlassCard>
-          */}
+        {/* YouTube Channels Overview */}
+        <div className="space-y-6">
+          <div className="text-center space-y-2">
+            <h2 className="font-heading text-2xl sm:text-3xl font-bold text-[#1a1d20]">
+              My YouTube Channels
+            </h2>
+            <p className="text-sm text-[var(--color-text-secondary)] font-normal">
+              Watch and subscribe to my original inspirational video channels:
+            </p>
+          </div>
 
-          <GlassCard className="p-8 border border-[#c5a059]/30 bg-white shadow-md flex flex-col justify-between space-y-6">
-            <div className="space-y-3">
-              <div className="flex items-center gap-2 text-xs font-bold text-[#c5a059] uppercase tracking-wider">
-                <Mail size={16} />
-                <span>Connect With Us</span>
-              </div>
-              <h3 className="font-heading text-2xl font-bold text-[#1a1d20]">
-                We&apos;d Love to Hear From You
-              </h3>
-              <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed font-normal">
-                We value every message we receive and welcome your questions, feedback, testimonies, and words of encouragement.
-              </p>
-              <div className="space-y-1 text-xs text-[#1a1d20] pt-2">
-                <p className="flex items-center gap-2 font-medium">
-                  <Globe size={14} className="text-[#c5a059]" />
-                  <span>faithrisingmedia.com</span>
-                </p>
-                <p className="flex items-center gap-2 font-medium">
-                  <Mail size={14} className="text-[#c5a059]" />
-                  <a href="mailto:contact@faithrisingmedia.com" className="hover:underline text-[#c5a059]">
-                    contact@faithrisingmedia.com
-                  </a>
-                </p>
-              </div>
-            </div>
-            <Button href="/contact" variant="gold-outline" size="md" className="w-full">
-              Contact Our Team
-            </Button>
-          </GlassCard>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {YOUTUBE_CHANNELS.map((ch) => (
+              <a
+                key={ch.name}
+                href={ch.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-5 rounded-2xl bg-white border border-[#c5a059]/30 hover:border-[#c5a059] shadow-sm hover:shadow-md transition-all flex items-center justify-between group"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="h-10 w-10 rounded-xl bg-red-600/10 border border-red-500/20 flex items-center justify-center text-red-600">
+                    <Tv size={20} />
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-bold text-[#1a1d20] group-hover:text-[#c5a059] transition-colors">
+                      {ch.name}
+                    </h3>
+                    <p className="text-xs text-[var(--color-text-muted)] font-mono">
+                      {ch.handle}
+                    </p>
+                  </div>
+                </div>
+                <ExternalLink size={15} className="text-[var(--color-text-muted)] group-hover:text-[#c5a059] transition-colors" />
+              </a>
+            ))}
+          </div>
         </div>
 
-        {/* Closing Prayer Blessing */}
-        <div className="text-center pt-8 max-w-2xl mx-auto space-y-3">
-          <p className="font-heading text-xl italic text-[#1a1d20]">
-            &ldquo;Our prayer is that every resource we publish encourages your faith, deepens your understanding of God&apos;s Word, and helps you walk each day with hope, wisdom, and confidence in Jesus Christ.&rdquo;
-          </p>
-          <p className="text-xs font-bold uppercase tracking-widest text-[#c5a059]">
-            Faith Rising Media — Inspiring Faith. Impacting Lives.
-          </p>
+        {/* Bottom Actions */}
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <Button href="/#support" variant="gold" size="lg" className="w-full sm:w-auto gap-2">
+            <Heart size={16} />
+            <span>Support the Content</span>
+          </Button>
+
+          <Button href="/contact" variant="gold-outline" size="lg" className="w-full sm:w-auto gap-2">
+            <Mail size={16} />
+            <span>Contact Us</span>
+          </Button>
         </div>
       </div>
     </PageWrapper>
   );
 }
-
-
-

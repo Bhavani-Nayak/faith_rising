@@ -2,58 +2,49 @@ import LegalPageView from "@/components/views/LegalPageView";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Refund Policy",
-  description: "Faith Rising Media Refund Policy for digital purchases.",
+  title: "Refund Policy | Faith Rising Media",
+  description: "Faith Rising Media Refund Policy for digital content creation services.",
 };
 
 const content = `
 <div class="p-5 rounded-2xl bg-[#FAF5E8] border border-[#c5a059]/40 mb-10 space-y-2">
-  <p class="text-xs font-bold uppercase tracking-wider text-[#c5a059]">Simple & Clear Refund Policy</p>
+  <p class="text-xs font-bold uppercase tracking-wider text-[#c5a059]">Refund Policy Overview</p>
   <p class="text-base text-[#1a1d20] leading-relaxed font-medium">
-    Because our eBooks are delivered instantly to your device as downloadable files, sales are generally final. However, if you experience a technical download problem or accidental duplicate charge, we are here to help and fix it quickly!
+    All payments received by Faith Rising Media are for digital content creation services. Please review our refund guidelines below.
   </p>
 </div>
 
-<p>When you purchase an eBook on Faith Rising Media, you get instant access to download your PDF book right after checkout.</p>
+<h2>1. Nature of Payments</h2>
+<p>All payments received by Faith Rising Media are for digital content creation services provided through YouTube and related digital platforms.</p>
+<p>These payments are not for physical products, subscriptions with guaranteed deliverables, or tangible goods.</p>
 
-<h2>2. How Refunds Work</h2>
-<p>Because digital eBooks can be downloaded immediately to your device, purchases are generally non-refundable once the file has been delivered.</p>
-<p>However, we value customer care and will happily review and approve refunds within <strong>14 days of purchase</strong> for the following reasons:</p>
+<h2>2. Non-Refundable Services</h2>
+<p>Since the services provided are digital in nature and involve the creation and publishing of online video content, all payments are generally non-refundable.</p>
 
+<h2>3. Exceptional Cases</h2>
+<p>If you believe a payment was made in error, you may contact us within 7 days of the transaction date. We will review such requests on a case-by-case basis.</p>
+
+<h2>4. How to Request a Review</h2>
+<p>To request a review of a payment, please email us through the <a href="/contact">Contact Us</a> page with the following details:</p>
 <ul>
-  <li><strong>Accidental Duplicate Charge:</strong> You were charged twice for the same book by mistake.</li>
-  <li><strong>Technical Download Issue:</strong> You experienced a technical problem preventing you from receiving or opening your book, and our support team could not resolve it for you.</li>
-  <li><strong>Verified Payment Error:</strong> An unauthorized or accidental billing issue confirmed by your payment provider.</li>
+  <li>Your full name</li>
+  <li>Date of payment</li>
+  <li>PayPal transaction ID</li>
+  <li>Reason for the request</li>
 </ul>
 
-<!-- SUPPORT-MISSION: Section 3 hidden until re-enabled
-<h2>3. Support Our Mission Voluntary Contributions</h2>
-<p>Gifts made through our "Support Our Mission" program help fund our writing, publishing, and global sharing of faith-based content. Because these contributions directly support ongoing outreach, they are generally non-refundable.</p>
-<p>If you made a typing mistake with your contribution amount during checkout, please contact us within 48 hours and we will gladly correct or refund it for you.</p>
--->
+<h2>5. Processing Time</h2>
+<p>We aim to respond to all refund-related queries within 5–7 business days.</p>
 
-<h2>4. Easy 3-Step Refund Request Process</h2>
-<p>If you need assistance with an order, simply follow these steps:</p>
-<ol class="list-decimal pl-6 space-y-2">
-  <li>Find your order details (your <strong>Full Name</strong>, <strong>Email Address</strong>, and <strong>Order Receipt Number</strong>).</li>
-  <li>Send an email to <a href="mailto:contact@faithrisingmedia.com" class="font-bold underline">contact@faithrisingmedia.com</a> explaining what happened.</li>
-  <li>Our friendly team will reply within <strong>1 to 3 business days</strong> to assist you or process your refund.</li>
-</ol>
-
-<h2>5. Contact Customer Support</h2>
-<p>If you ever have questions about your downloads or order receipts, please reach out to us anytime:</p>
-<p>
-  <strong>Faith Rising Media — Customer Support</strong><br />
-  Website: <a href="https://faithrisingmedia.com" target="_blank" rel="noopener noreferrer">https://faithrisingmedia.com</a><br />
-  Email: <a href="mailto:contact@faithrisingmedia.com">contact@faithrisingmedia.com</a>
-</p>
+<h2>6. Contact</h2>
+<p>For any questions regarding this Refund Policy, please contact us through the email address provided on the <a href="/contact">Contact Us</a> page (<a href="mailto:contact@faithrisingmedia.com">contact@faithrisingmedia.com</a>).</p>
 `;
 
 export default function RefundPolicyPage() {
   return (
     <LegalPageView
       title="Refund Policy"
-      lastUpdated="July 26, 2026"
+      lastUpdated="September 2026"
       content={content}
     />
   );

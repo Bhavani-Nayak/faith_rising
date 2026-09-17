@@ -1,9 +1,5 @@
-"use client";
-
-import { useBlogViewModel } from "@/viewmodels/useBlogViewModel";
-import BlogListView from "@/components/views/BlogListView";
+import { redirect } from "next/navigation";
 
 export default function BlogPage() {
-  const vm = useBlogViewModel();
-  return <BlogListView {...vm} />;
+  redirect("/");
 }

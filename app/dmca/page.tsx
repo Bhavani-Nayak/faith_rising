@@ -2,52 +2,46 @@ import LegalPageView from "@/components/views/LegalPageView";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "DMCA / Copyright Policy",
-  description: "Faith Rising Media DMCA and Copyright Policy regarding original digital content and intellectual property.",
+  title: "DMCA Notice | Faith Rising Media",
+  description: "DMCA Notice and copyright policies for Faith Rising Media digital content creation services and YouTube channels.",
 };
 
 const content = `
 <div class="p-5 rounded-2xl bg-[#FAF5E8] border border-[#c5a059]/40 mb-10 space-y-2">
-  <p class="text-xs font-bold uppercase tracking-wider text-[#c5a059]">Respecting Intellectual Property</p>
+  <p class="text-xs font-bold uppercase tracking-wider text-[#c5a059]">DMCA Notice – Faith Rising Media</p>
   <p class="text-base text-[#1a1d20] leading-relaxed font-medium">
-    At Faith Rising Media, we publish original, Scripture-centered eBooks and content. We deeply respect the rights of creators and respond promptly to legitimate copyright concerns.
+    Faith Rising Media respects the intellectual property rights of others.
   </p>
 </div>
 
-<h2>1. Our Commitment to Original Content</h2>
-<p>We are dedicated to creating original Christian books, devotionals, articles, and graphics. We respect the work of writers, artists, and publishers, and we expect all visitors to respect copyright laws as well.</p>
-
-<h2>2. How to Report a Copyright Concern</h2>
-<p>If you are a copyright owner or authorized representative and believe that any material on our website infringes your copyright, please send a written email to our copyright team with the following simple information:</p>
-
-<ol class="list-decimal pl-6 space-y-2">
-  <li>Your full name and contact email address.</li>
-  <li>A description of the copyrighted work you believe has been infringed.</li>
-  <li>The exact link or webpage on our website where the material is located.</li>
-  <li>A statement that you genuinely believe the use is unauthorized.</li>
-  <li>A statement confirming that the information provided in your notice is accurate.</li>
-</ol>
-
-<h2>3. Our Review Process</h2>
-<p>When we receive a copyright notice, our team will review it promptly within 24 to 48 hours. If a valid concern is confirmed, we will take appropriate action, such as updating or removing the content.</p>
-
-<h2>4. Protection of Faith Rising Media Books & Content</h2>
-<p>All eBooks, articles, page layouts, cover designs, and graphics published on Faith Rising Media are protected by copyright laws. Please do not copy, redistribute, or resell our eBooks or website content without written permission.</p>
-
-<h2>5. Contact Our Copyright Team</h2>
-<p>If you have any copyright questions or notices, please contact us:</p>
 <p>
-  <strong>Faith Rising Media — Copyright Department</strong><br />
-  General Contact: <a href="mailto:contact@faithrisingmedia.com">contact@faithrisingmedia.com</a><br />
-  Website: <a href="https://faithrisingmedia.com" target="_blank" rel="noopener noreferrer">https://faithrisingmedia.com</a>
+  If you believe that any content on this website or our YouTube channels infringes your copyright, please send a notice to the email address provided on the <a href="/contact">Contact Us</a> page with the following information:
+</p>
+
+<ul>
+  <li>Your full name and contact information</li>
+  <li>Description of the copyrighted work</li>
+  <li>URL or location of the allegedly infringing material</li>
+  <li>A statement that you have a good faith belief that the use is not authorized</li>
+  <li>A statement under penalty of perjury that the information is accurate</li>
+  <li>Your physical or electronic signature</li>
+</ul>
+
+<p>
+  We will review and respond to valid DMCA notices promptly.
+</p>
+
+<h2>Contact for Copyright Notices</h2>
+<p>
+  Please send all notices to: <a href="mailto:contact@faithrisingmedia.com">contact@faithrisingmedia.com</a> or via our <a href="/contact">Contact Us</a> page.
 </p>
 `;
 
 export default function DMCAPage() {
   return (
     <LegalPageView
-      title="DMCA / Copyright Policy"
-      lastUpdated="July 26, 2026"
+      title="DMCA Notice"
+      lastUpdated="September 2026"
       content={content}
     />
   );

@@ -1,9 +1,5 @@
-"use client";
-
-import { useMembershipViewModel } from "@/viewmodels/useMembershipViewModel";
-import MembershipView from "@/components/views/MembershipView";
+import { redirect } from "next/navigation";
 
 export default function MembershipPage() {
-  const vm = useMembershipViewModel();
-  return <MembershipView {...vm} />;
+  redirect("/");
 }

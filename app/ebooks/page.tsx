@@ -1,9 +1,5 @@
-"use client";
-
-import { useEbookCatalogViewModel } from "@/viewmodels/useEbookCatalogViewModel";
-import EbookCatalogView from "@/components/views/EbookCatalogView";
+import { redirect } from "next/navigation";
 
 export default function EbooksPage() {
-  const vm = useEbookCatalogViewModel();
-  return <EbookCatalogView {...vm} />;
+  redirect("/");
 }

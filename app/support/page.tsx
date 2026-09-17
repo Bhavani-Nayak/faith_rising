@@ -1,18 +1,11 @@
-// SUPPORT-MISSION: Support page hidden until re-enabled.
-// import SupportView from "@/components/views/SupportView";
-// import type { Metadata } from "next";
-//
-// export const metadata: Metadata = {
-//   title: "Support This Project",
-//   description: "Support Faith Rising Media — help us keep creating honest, reflective content.",
-// };
-//
-// export default function SupportPage() {
-//   return <SupportView />;
-// }
+import SupportView from "@/components/views/SupportView";
+import type { Metadata } from "next";
 
-import { notFound } from "next/navigation";
+export const metadata: Metadata = {
+  title: "Support the Content | Faith Rising Media",
+  description: "Support Faith Rising Media digital content creation services and inspirational video production on YouTube.",
+};
 
 export default function SupportPage() {
-  notFound();
+  return <SupportView />;
 }
