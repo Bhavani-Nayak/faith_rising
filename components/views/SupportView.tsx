@@ -18,8 +18,7 @@ import {
 
 const paypalBaseUrl =
   process.env.NEXT_PUBLIC_PAYPAL_SUPPORT_URL ??
-  process.env.NEXT_PUBLIC_PAYPAL_ME_URL ??
-  "https://www.paypal.me/bhavaninayak";
+  "https://www.paypal.com/ncp/payment/E8T7NDWVSTTFE";
 
 const supportTiers = [
   {
@@ -88,7 +87,7 @@ export default function SupportView() {
     }
 
     let url = paypalBaseUrl;
-    if (finalAmount && !isNaN(Number(finalAmount))) {
+    if (paypalBaseUrl.includes("paypal.me") && finalAmount && !isNaN(Number(finalAmount))) {
       const baseUrl = paypalBaseUrl.replace(/\/$/, "");
       url = `${baseUrl}/${finalAmount}`;
     }

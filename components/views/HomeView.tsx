@@ -75,8 +75,7 @@ export default function HomeView() {
 
   const paypalBaseUrl =
     process.env.NEXT_PUBLIC_PAYPAL_SUPPORT_URL ??
-    process.env.NEXT_PUBLIC_PAYPAL_ME_URL ??
-    "https://www.paypal.me/bhavaninayak";
+    "https://www.paypal.com/ncp/payment/E8T7NDWVSTTFE";
 
   const handleSupportRedirect = () => {
     setErrorMsg(null);
@@ -97,7 +96,7 @@ export default function HomeView() {
     }
 
     let url = paypalBaseUrl;
-    if (finalAmount && !isNaN(Number(finalAmount))) {
+    if (paypalBaseUrl.includes("paypal.me") && finalAmount && !isNaN(Number(finalAmount))) {
       const cleanBase = paypalBaseUrl.replace(/\/$/, "");
       url = `${cleanBase}/${finalAmount}`;
     }
